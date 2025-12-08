@@ -1,0 +1,149 @@
+.about-image { 
+    display: block;
+    margin-top: 30px;        
+    margin-bottom: 30px;     
+    max-width: 60%;          
+    height: auto;
+}
+        
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    text-transform: uppercase;  
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+section h2 {
+    color: #ffb6c1;           
+    font-size: 2.5rem;        
+    text-align: center;       
+    font-weight: 700;         
+    margin-bottom: 1.5rem; 
+    margin-top: 60px;  
+}
+
+section h5 {
+    font-style: italic;   
+    font-size: 1rem;      
+    text-align: left;     
+    margin-bottom: 0.5rem; 
+    color: #909190;
+}
+
+header {
+    background-image: url("images/mngbackground.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    color: white;                  
+    height: 100vh;                 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: height 0.4s ease;
+}
+
+header h1 {
+    font-size: 7rem;
+    color: #000000;       
+    font-weight: 900;      
+    text-shadow: none;     
+}
+
+.exp-img {
+    max-width: 50%;   
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+.exp-img:first-of-type {
+    margin-top: 25px;   
+}
+
+.custom-btn {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+    font-family: 'Special Gothic Condensed One', sans-serif; 
+    font-size: 1rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;      
+}
+
+.custom-btn:hover {
+    background-color: white; 
+    border-color: #6c757d;
+    color: #ffb6c1; 
+}
+
+#designs {
+    padding-bottom: 40px;
+}
+
+#resume img {
+    max-width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-size: 1.6rem; /* adjust */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* PDF modals */
+
+.pdf-modal .modal-content {
+    border-radius: 0;
+    border: 3px solid #ffb6c1;
+}
+
+.pdf-modal .modal-header {
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 2px solid #ffb6c1;
+}
+
+.pdf-modal .modal-title {
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.pdf-modal .btn-close {
+    filter: invert(1);
+}
+
+/* Size and layout for PDF modals only */
+.pdf-modal .modal-dialog {
+    max-width: 95% !important;
+    height: 95vh !important;
+    margin: auto;
+}
+
+.pdf-modal .modal-content {
+    height: 95vh !important;
+}
+
+.pdf-frame {
+    width: 100%;
+    height: calc(95vh - 60px);
+    border: none;
+}
+
+/* Image shadows */
+
+.shadow-img {
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
