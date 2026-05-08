@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Martha Stewart</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link href="custom.css" rel="stylesheet">
+
+    </head>
+
+<body>
+
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand back-home" href="index.html">
+                 Back to Portfolio</a>
+        </div>
+    </nav>
+    <!-- END NAVBAR SECTION-->
+
+
+
+    <!-- Content -->
+    <section class="py-5">
+        <div class="container">
+
+            <h1 class="text-center mb-4">
+                "Sheets for Success" Martha Stewart Bedding Campaign
+            </h1>
+
+            <div class="text-center mb-4">
+    
+    <!-- Clickable Preview Image -->
+    <img src="images/mscampaign.png"
+         class="img-fluid shadow-img preview-image"
+         alt="Campaign Preview"
+         data-bs-toggle="modal"
+         data-bs-target="#imageModal">
+
+</div>
+
+<!-- Fullscreen Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+
+            <!-- Close Button -->
+            <div class="modal-header border-0">
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+            </div>
+
+            <!-- Fullscreen Image -->
+            <div class="modal-body d-flex justify-content-center align-items-center p-0">
+                <img src="images/mscampaign.png"
+                     class="img-fluid"
+                     alt="Full Campaign">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+            <p class="lead text-center">
+                "Sheets for Success" is a class ad campaign (partner) project I worked on during my sophomore year at university. Targeting non-white Genz males, my partner and I had to think of creative ways to grab their attention, so that the next time they need new bedding, the Martha Stewart brand will be considered. 
+
+                We accomplished this through a billboard advertisement located at a bus stop on a college campus, as well as through three different TikTok videos. 
+            </p>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+</html>
