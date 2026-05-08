@@ -1,42 +1,46 @@
 .about-image { 
     display: block;
-    margin-top: 30px;        
-    margin-bottom: 30px;     
-    max-width: 60%;          
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 60%;
     height: auto;
 }
-        
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Special Gothic Condensed One', sans-serif;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
 }
 
 section h2 {
-    color: #ffb6c1;           
-    font-size: 2.5rem;        
-    text-align: center;       
-    font-weight: 700;         
-    margin-bottom: 1.5rem; 
-    margin-top: 60px;  
+    color: #ffb6c1;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 1.5rem;
 }
 
 section h5 {
-    font-style: italic;   
-    font-size: 1rem;      
-    text-align: left;     
-    margin-bottom: 0.5rem; 
+    font-style: italic;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
     color: #909190;
 }
 
 header {
     background-image: url("images/mngbackground.jpg");
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat;  
-    color: white;                  
-    height: 100vh;                 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,39 +51,43 @@ header {
 
 header h1 {
     font-size: 7rem;
-    color: #000000;       
-    font-weight: 900;      
-    text-shadow: none;     
+    color: #000000;
+    font-weight: 900;
+    text-shadow: none;
 }
 
 .exp-img {
-    max-width: 50%;   
+    max-width: 50%;
     display: block;
-    margin-bottom: 3px;
     margin-top: 0;
+    margin-bottom: 3px;
 }
 
 .exp-img:first-of-type {
-    margin-top: 25px;   
+    margin-top: 25px;
 }
 
 .custom-btn {
     background-color: #6c757d;
     border-color: #6c757d;
     color: white;
-    font-family: 'Special Gothic Condensed One', sans-serif; 
-    font-size: 1rem; 
-    text-transform: uppercase; 
-    letter-spacing: 1px;      
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .custom-btn:hover {
-    background-color: white; 
+    background-color: white;
     border-color: #6c757d;
-    color: #ffb6c1; 
+    color: #ffb6c1;
 }
 
 #designs {
+    padding-bottom: 40px;
+}
+
+#leadership {
     padding-bottom: 40px;
 }
 
@@ -91,20 +99,16 @@ header h1 {
 
 .navbar-brand {
     font-family: 'Special Gothic Condensed One', sans-serif;
-    font-size: 1.6rem; /* adjust */
+    font-size: 1.6rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
 /* PDF modals */
-
 .pdf-modal .modal-content {
     border-radius: 0;
     border: 3px solid #ffb6c1;
+    height: 95vh !important;
 }
 
 .pdf-modal .modal-header {
@@ -124,15 +128,10 @@ body {
     filter: invert(1);
 }
 
-/* Size and layout for PDF modals only */
 .pdf-modal .modal-dialog {
     max-width: 95% !important;
     height: 95vh !important;
     margin: auto;
-}
-
-.pdf-modal .modal-content {
-    height: 95vh !important;
 }
 
 .pdf-frame {
@@ -142,10 +141,138 @@ body {
 }
 
 /* Image shadows */
-
 .shadow-img {
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
+/* Designs section */
+.design-card-link {
+    display: block;
+    text-decoration: none;
+}
 
+#designs .design-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 !important;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#designs .design-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0 !important;
+    transition: transform 0.3s ease;
+}
+
+#designs .design-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+#designs .design-card:hover img {
+    transform: scale(1.05);
+}
+
+#designs .design-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#designs .design-card:hover .design-overlay {
+    opacity: 1;
+}
+
+#designs .design-overlay h5 {
+    width: 100%;
+    margin: 0;
+    color: white;
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    text-align: center;
+    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.7);
+}
+
+
+    
+
+.back-home {
+    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.preview-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.preview-image:hover {
+    transform: scale(1.02);
+}
+
+.canva-embed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.canva-embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.blog-link-image {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar .navbar-brand.back-home {
+    font-family: 'Special Gothic Condensed One', sans-serif !important;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
