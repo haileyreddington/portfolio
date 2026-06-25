@@ -1,152 +1,223 @@
-.about-image { 
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 60%;
-    height: auto;
-}
+
+/* ==================================================
+   GLOBAL STYLES
+================================================== */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Special Gothic Condensed One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0.5rem;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 section h2 {
-    color: #ffb6c1;
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 700;
     margin-top: 60px;
     margin-bottom: 1.5rem;
+    color: #ffb6c1;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
 }
 
 section h5 {
-    font-style: italic;
-    font-size: 1rem;
-    text-align: left;
     margin-bottom: 0.5rem;
     color: #909190;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: left;
 }
 
+#experience h4 {
+    margin-bottom: 1rem;
+    color: #909190;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+    
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
 header {
-    background-image: url("images/mngbackground.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    color: #ffffff;
     text-align: center;
-    position: relative;
+    background-image: url("images/mngbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: height 0.4s ease;
 }
 
 header h1 {
-    font-size: 7rem;
     color: #000000;
+    font-size: 7rem;
     font-weight: 900;
     text-shadow: none;
 }
 
-.exp-img {
-    max-width: 50%;
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.navbar-brand,
+.navbar .navbar-brand.back-home {
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand.back-home:hover,
+.navbar .navbar-brand.back-home:focus {
+    color: #ffb6c1;
+}
+
+
+/* ==================================================
+   SECTION SPACING
+================================================== */
+
+#designs,
+#leadership {
+    padding-bottom: 40px;
+}
+
+
+/* ==================================================
+   ABOUT AND EXPERIENCE IMAGES
+================================================== */
+
+.about-image {
     display: block;
+    max-width: 60%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.exp-img {
+    display: block;
+    max-width: 50%;
+    height: auto;
     margin-top: 0;
     margin-bottom: 3px;
+}
+
+.exp-img-small {
+    max-width: 45%;
+}
+
+.exp-img-large {
+    max-width: 65%;
 }
 
 .exp-img:first-of-type {
     margin-top: 25px;
 }
 
-.custom-btn {
-    background-color: #6c757d;
-    border-color: #6c757d;
-    color: white;
-    font-family: 'Special Gothic Condensed One', sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
-.custom-btn:hover {
-    background-color: white;
-    border-color: #6c757d;
-    color: #ffb6c1;
-}
-
-#designs {
-    padding-bottom: 40px;
-}
-
-#leadership {
-    padding-bottom: 40px;
-}
+/* ==================================================
+   RESUME
+================================================== */
 
 #resume img {
     max-width: 70%;
+    height: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.navbar-brand {
-    font-family: 'Special Gothic Condensed One', sans-serif;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
 
-/* PDF modals */
-.pdf-modal .modal-content {
-    border-radius: 0;
-    border: 3px solid #ffb6c1;
-    height: 95vh !important;
-}
+/* ==================================================
+   BUTTONS
+================================================== */
 
-.pdf-modal .modal-header {
-    background-color: #000000;
+.custom-btn {
     color: #ffffff;
-    border-bottom: 2px solid #ffb6c1;
-}
-
-.pdf-modal .modal-title {
-    font-family: 'Special Gothic Condensed One', sans-serif;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    background-color: #6c757d;
+    border-color: #6c757d;
 }
 
-.pdf-modal .btn-close {
-    filter: invert(1);
+.custom-btn:hover,
+.custom-btn:focus {
+    color: #ffb6c1;
+    background-color: #ffffff;
+    border-color: #6c757d;
 }
 
-.pdf-modal .modal-dialog {
-    max-width: 95% !important;
-    height: 95vh !important;
-    margin: auto;
-}
 
-.pdf-frame {
-    width: 100%;
-    height: calc(95vh - 60px);
-    border: none;
-}
+/* ==================================================
+   GENERAL IMAGE STYLES
+================================================== */
 
-/* Image shadows */
 .shadow-img {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Designs section */
+.preview-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    object-fit: contain;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.preview-image:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.blog-link-image {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   CARDS
+================================================== */
+
+.card {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+/* ==================================================
+   DESIGN PORTFOLIO CARDS
+================================================== */
+
 .design-card-link {
     display: block;
     text-decoration: none;
@@ -155,9 +226,11 @@ header h1 {
 #designs .design-card {
     position: relative;
     overflow: hidden;
-    border-radius: 0 !important;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 #designs .design-card img {
@@ -165,13 +238,13 @@ header h1 {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 0 !important;
+    border-radius: 0;
     transition: transform 0.3s ease;
 }
 
 #designs .design-card:hover {
     transform: scale(1.03);
-    box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
 #designs .design-card:hover img {
@@ -180,16 +253,13 @@ header h1 {
 
 #designs .design-overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.85);
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -201,78 +271,206 @@ header h1 {
 #designs .design-overlay h5 {
     width: 100%;
     margin: 0;
-    color: white;
-    font-family: 'Special Gothic Condensed One', sans-serif;
+    color: #ffffff;
+    font-family: "Special Gothic Condensed One", sans-serif;
     font-size: 2.2rem;
     font-weight: 900;
     font-style: normal;
     line-height: 1.3;
     letter-spacing: 0.5px;
-    text-transform: none;
     text-align: center;
-    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
+    text-transform: none;
 }
 
 
-    
+/* ==================================================
+   PDF MODALS
+================================================== */
 
-.back-home {
-    font-family: 'Special Gothic Condensed One', sans-serif;
-    font-size: 1.6rem;
+.pdf-modal .modal-dialog {
+    width: 95%;
+    max-width: 95%;
+    height: 95vh;
+    margin: auto;
+}
+
+.pdf-modal .modal-content {
+    height: 95vh;
+    border: 3px solid #ffb6c1;
+    border-radius: 0;
+}
+
+.pdf-modal .modal-header {
+    color: #ffffff;
+    background-color: #000000;
+    border-bottom: 2px solid #ffb6c1;
+}
+
+.pdf-modal .modal-title {
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.preview-image {
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.pdf-modal .btn-close {
+    filter: invert(1);
 }
 
-.preview-image:hover {
-    transform: scale(1.02);
+.pdf-frame {
+    width: 100%;
+    height: calc(95vh - 60px);
+    border: none;
 }
+
+
+/* ==================================================
+   FULLSCREEN IMAGE MODALS
+================================================== */
+
+.image-modal .modal-dialog {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-modal .modal-content {
+    width: 100%;
+    height: 100vh;
+    border: 0;
+    border-radius: 0;
+}
+
+.image-modal .modal-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: auto;
+}
+
+.image-modal .modal-body {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #000000;
+}
+
+.fullscreen-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 20px);
+    object-fit: contain;
+}
+
+
+
+
+/* ==================================================
+   INSTAGRAM-STYLE SCROLLING VIEWER
+================================================== */
+
+.instagram-viewer {
+    width: min(650px, 95vw);
+    height: calc(100vh - 110px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.45);
+    scrollbar-width: thin;
+}
+
+.instagram-feed-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.instagram-viewer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.instagram-viewer::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+}
+
+.instagram-viewer::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 10px;
+}
+
+.instagram-viewer::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}
+
+
+/* ==================================================
+   CANVA EMBEDS
+================================================== */
 
 .canva-embed {
     position: relative;
     width: 100%;
     height: 0;
     padding-top: 56.25%;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .canva-embed iframe {
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
 }
 
-.blog-link-image {
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
+
+/* ==================================================
+   RESPONSIVE STYLES
+================================================== */
+
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 4.5rem;
+    }
+
+    .about-image,
+    .exp-img,
+    #resume img {
+        max-width: 100%;
+    }
+
+    .preview-image {
+        height: auto;
+    }
 }
 
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
 
+    section h2 {
+        margin-top: 40px;
+        font-size: 2rem;
+    }
 
+    .instagram-viewer {
+        width: 100%;
+        height: calc(100vh - 90px);
+        border-radius: 10px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-.navbar .navbar-brand.back-home {
-    font-family: 'Special Gothic Condensed One', sans-serif !important;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    #designs .design-overlay h5 {
+        font-size: 1.7rem;
+    }
 }
+
