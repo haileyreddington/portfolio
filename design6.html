@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obagi</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link href="custom.css" rel="stylesheet">
+
+    </head>
+
+<body>
+
+
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand back-home" href="index.html">
+                 Back to Portfolio</a>
+        </div>
+    </nav>
+    <!-- END NAVBAR SECTION-->
+
+
+
+    <!-- Content -->
+    <section class="py-5">
+        <div class="container">
+
+            <h1 class="text-center mb-4">
+                Instagram Feed Redesign
+            </h1>
+
+    
+
+<!-- Before and After Image Cards -->
+<div class="row justify-content-center g-4 mb-5">
+
+    <!-- Before Card -->
+    <div class="col-md-5">
+        <div class="card border-0 shadow h-100">
+            <img src="images/obagibefore.png"
+                 class="card-img-top preview-image"
+                 alt="Obagi Instagram feed before redesign"
+                 data-bs-toggle="modal"
+                 data-bs-target="#beforeModal"
+                 role="button">
+
+            <div class="card-body text-center">
+                <h2 class="card-title h4">Before</h2>
+                <p class="card-text">
+                    The original Instagram feed before the visual redesign.
+                </p>
+                <button class="btn btn-dark"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#beforeModal">
+                    View Full Screen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- After Card -->
+    <div class="col-md-5">
+        <div class="card border-0 shadow h-100">
+            <img src="images/obagiafter.png"
+                 class="card-img-top preview-image"
+                 alt="Obagi Instagram feed after redesign"
+                 data-bs-toggle="modal"
+                 data-bs-target="#afterModal"
+                 role="button">
+
+            <div class="card-body text-center">
+                <h2 class="card-title h4">After</h2>
+                <p class="card-text">
+                    The updated Instagram feed following the visual redesign.
+                </p>
+                <button class="btn btn-dark"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#afterModal">
+                    View Full Screen
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Before Fullscreen Modal -->
+<div class="modal fade"
+     id="beforeModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="beforeModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+
+            <div class="modal-header border-0">
+                <h2 class="modal-title text-white h5" id="beforeModalLabel">
+                    Before Redesign
+                </h2>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+            </div>
+
+            
+            <div class="modal-body d-flex justify-content-center align-items-center p-3">
+
+                <div class="instagram-viewer">
+                    <img src="images/obagibefore.png"
+                         class="instagram-feed-image"
+                         alt="Obagi Instagram feed before redesign">
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- After Fullscreen Modal -->
+<div class="modal fade"
+     id="afterModal"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="afterModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+
+            <div class="modal-header border-0">
+                <h2 class="modal-title text-white h5" id="afterModalLabel">
+                    After Redesign
+                </h2>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+            </div>
+
+            <div class="modal-body d-flex justify-content-center align-items-center p-3">
+                <div class="instagram-viewer">
+                    <img src="images/obagiafter.png"
+                         class="instagram-feed-image"
+                         alt="Obagi Instagram feed before redesign">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <p class="lead text-center">
+                A sales representative for Obagi Medical, a leading professional pharmaceutical skincare company, approached me to redesign her sales-focused Instagram account. The goal was to create a feed that felt more modern, polished, and cohesive while clearly communicating the Obagi brand and presenting product information in a professional, engaging way.
+            </p>
+
+            <p class="lead text-center">
+                The project involved refining the account’s overall visual identity through detailed image editing, improved layout consistency, and the creation of new branded content. The before-and-after comparison shown here highlights how the redesign transformed the feed into a more organized, visually appealing, and comprehensive platform for supporting sales and customer engagement.
+            </p>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script> 
+
+</body>
+</html>
