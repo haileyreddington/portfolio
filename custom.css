@@ -259,7 +259,7 @@ header h1 {
     justify-content: center;
     padding: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(255, 255, 255, 0.92);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -271,7 +271,7 @@ header h1 {
 #designs .design-overlay h5 {
     width: 100%;
     margin: 0;
-    color: #ffffff;
+    color: #000000;
     font-family: "Special Gothic Condensed One", sans-serif;
     font-size: 2.2rem;
     font-weight: 900;
